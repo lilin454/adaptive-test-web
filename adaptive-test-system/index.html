@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>適性測驗系統</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="start-screen">
+        <h1>適性測驗系統</h1>
+        <button id="start-btn">開始測驗</button>
+    </div>
+
+    <div id="test-screen" style="display: none;">
+		<h2>問題 <span id="question-number"></span></h2>
+		<p id="question-text"></p>
+		<div id="options"></div>
+		<p>當前難度: <span id="current-difficulty"></span></p>
+	</div>
+
+
+    <div id="result-screen" style="display: none;">
+		<h2>測驗結果</h2>
+		<p>最終難度: <span id="final-difficulty"></span></p>
+		<div id="question-review"></div>
+		<button id="restart-btn">重新開始</button>
+		<button id="reset-difficulty-btn">重置所有題目難度</button> <!-- 新增按鈕 -->
+	</div>
+
+
+ <script src="js/adaptive-test.js"></script>
+</body>
+</html>
